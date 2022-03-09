@@ -5,11 +5,12 @@
 #pragma once
 
 #include "Scene.h"
+
+#include "cppcoro/generator.h"
+
 using Microsoft::WRL::ComPtr;
 using std::unique_ptr;
 using std::make_unique;
-using namespace DirectX;
-
 using namespace DirectX;
 
 class TitleScene final : public Scene {
@@ -36,7 +37,43 @@ public:
 	void Render() override;
 
 private:
+	DX12::DESCRIPTORHEAP descriptorHeap;
+	DX12::SPRITEBATCH    spriteBatch;
+	DX12::HGPUDESCRIPTOR dx9GpuDescriptor;
+
+	DX9::SPRITE curtain; //カーテン
+	DX9::SPRITE titlelogo;//タイトルロゴ
+	DX9::SPRITE prologue_text;//プロローグテキスト
+
+	SimpleMath::Vector3 curtain_pos;//カーテン位置
+
+	float title_logo_alpha;	//タイトルロゴのアルファ値
+	float protext_alpha;	//テキストのアルファ値
+	float time_delta;
+	float wait_time;	//間を作るのに使用
+
+	bool opening_start_flag;	//コルーチン生成フラグ
+	bool game_start_flag;	//シーン切り替えフラグ	
+
+	const float ALPHA_SPEED = 200.0f;	//アルファ値増減スピード
+	const float CURTAIN_UP_SPEED = 200.0f;	//カーテンの上がるスピード
 
 
+	//BGM
+	DX9::MEDIARENDERER noise;	//ざわつき音
+	int noise_volume;	//ざわつきの大きさ
 
+	//SE
+	XAudio::SOUNDEFFECT buzzer;	//ブザー音
+	XAudio::SOUNDEFFECT start_se;	//ゲームスタート音
+
+	//PV
+	DX9::MEDIARENDERER pv;
+	bool pv_play_flag;
+	float pv_play_waittime;
+
+	// コルーチンのプロトタイプ宣言
+	cppcoro::generator<int> Opening();	//オープニング演出
+	cppcoro::generator<int>                  co_opening;
+	cppcoro::detail::generator_iterator<int> co_opening_it;
 };
