@@ -60,7 +60,7 @@ NextScene TitleScene::Update(const float deltaTime)
 }
 
 // Draws the scene.
-void MainScene::Render()
+void TitleScene::Render()
 {
 	// TODO: Add your rendering code here.
 	DXTK->ResetCommand();

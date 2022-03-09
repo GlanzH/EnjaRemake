@@ -1,5 +1,5 @@
 //
-// MainScene.cpp
+// ResultScene.cpp
 //
 
 #include "Base/pch.h"
@@ -35,19 +35,19 @@ void ResultScene::Terminate()
 }
 
 // Direct3D resource cleanup.
-void MainScene::OnDeviceLost()
+void ResultScene::OnDeviceLost()
 {
 
 }
 
 // Restart any looped sounds here
-void MainScene::OnRestartSound()
+void ResultScene::OnRestartSound()
 {
 
 }
 
 // Updates the scene.
-NextScene MainScene::Update(const float deltaTime)
+NextScene ResultScene::Update(const float deltaTime)
 {
 	// If you use 'deltaTime', remove it.
 	UNREFERENCED_PARAMETER(deltaTime);
@@ -60,7 +60,7 @@ NextScene MainScene::Update(const float deltaTime)
 }
 
 // Draws the scene.
-void MainScene::Render()
+void ResultScene::Render()
 {
 	// TODO: Add your rendering code here.
 	DXTK->ResetCommand();
