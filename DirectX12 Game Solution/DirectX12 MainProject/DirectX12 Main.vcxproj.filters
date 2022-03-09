@@ -66,6 +66,12 @@
     <ClInclude Include="TitleScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\Player.h">
+      <Filter>ClassList\CharaClass\PlayerClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerBase.h">
+      <Filter>ClassList\CharaClass\PlayerClass</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Main.cpp">
@@ -85,6 +91,12 @@
     </ClCompile>
     <ClCompile Include="TitleScene.cpp">
       <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\PlayerClass\Player.cpp">
+      <Filter>ClassList\CharaClass\PlayerClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerBase.cpp">
+      <Filter>ClassList\CharaClass\PlayerClass</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
