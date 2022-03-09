@@ -1,9 +1,8 @@
 //
 // SceneFactory.h
 //
-#include "TitleScene.h"
+
 #include "MainScene.h"
-#include "ResultScene.h"
 
 class SceneFactory final {
 public:
