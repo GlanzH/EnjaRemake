@@ -1,6 +1,6 @@
 #pragma once
 
-#include"ClassList/CharaClass/PlayerClass/PlayerBase.h"
+#include"ClassList/CharaClass/PlayerClass/PlayerBase/PlayerBase.h"
 
 class Player :public PlayerBase
 {

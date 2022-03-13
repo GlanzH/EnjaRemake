@@ -25,6 +25,60 @@
     <Filter Include="ClassList\CharaClass\PlayerClass">
       <UniqueIdentifier>{cac97e61-42f0-4b5a-9e37-a5b1609bad3f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ClassList\3D">
+      <UniqueIdentifier>{22a60aaa-bf30-4b59-8a4d-d10e714c85bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\3D\Camera">
+      <UniqueIdentifier>{f5ad666c-ade7-44ee-952a-7c36a64bcad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\3D\shader">
+      <UniqueIdentifier>{090e2344-05fd-4ce9-b47c-7a5e93a2cc64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\EnemyBase">
+      <UniqueIdentifier>{dbf033a6-89c3-4670-98fc-2ddfb7290ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual">
+      <UniqueIdentifier>{1476c5ac-df9a-426f-8fc3-3b447e9885d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\EnemyManager">
+      <UniqueIdentifier>{e8a76bd4-cc36-4c68-86b7-5075abe9730f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\EnemyFactory">
+      <UniqueIdentifier>{75b5674a-2fec-4532-b3f3-4048bf051ab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\Arrow">
+      <UniqueIdentifier>{ca9ca0a5-75a4-4d61-baa0-e395ea7d0652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan">
+      <UniqueIdentifier>{7a551290-13f5-4d67-9087-8bd78d6debe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\Shielder">
+      <UniqueIdentifier>{d0d48b8b-7b31-4ff0-ab82-2f614557a753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan">
+      <UniqueIdentifier>{ebcaf918-fb27-46f5-b42b-1864df4dd2b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\PlayerClass\PlayerBase">
+      <UniqueIdentifier>{eb3dfad6-5c59-4423-b928-37436d323f62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\PlayerClass\PlayerManager">
+      <UniqueIdentifier>{2511e99d-bb7f-4f44-91f8-06d0e61dc554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\Observer">
+      <UniqueIdentifier>{5f3ee14a-87cf-45c8-94f0-b3d428012523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI">
+      <UniqueIdentifier>{04bbc287-1526-4a32-8e2a-2f22c03a81e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StageClass">
+      <UniqueIdentifier>{d1d6836f-924c-4cc0-bfb5-56ea2bfaf66e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StatusManager">
+      <UniqueIdentifier>{b0b680db-1d17-4bbf-bc85-4419e43da257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\ResourceManager">
+      <UniqueIdentifier>{7a668df8-8472-4a93-8eb9-e17cc3d6e107}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\d3dx12.h">
@@ -69,8 +123,38 @@
     <ClInclude Include="ClassList\CharaClass\PlayerClass\Player.h">
       <Filter>ClassList\CharaClass\PlayerClass</Filter>
     </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerBase.h">
-      <Filter>ClassList\CharaClass\PlayerClass</Filter>
+    <ClInclude Include="ClassList\3D\Camera\C_Camera.h">
+      <Filter>ClassList\3D\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\3D\Shader\Shader.h">
+      <Filter>ClassList\3D\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyBase\EnemyBase.h">
+      <Filter>ClassList\CharaClass\EnemyClass\EnemyBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyFactory\EnemyFactory.h">
+      <Filter>ClassList\CharaClass\EnemyClass\EnemyFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyManager\EnemyManager.h">
+      <Filter>ClassList\CharaClass\EnemyClass\EnemyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan\SwordMan.h">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\SwordMan</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\Shielder\Shielder.h">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\Shielder</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan\RandSwordMan.h">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\RandSwordMan</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\Arrow\Arrow.h">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.h">
+      <Filter>ClassList\CharaClass\PlayerClass\PlayerBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.h">
+      <Filter>ClassList\CharaClass\PlayerClass\PlayerManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -95,8 +179,38 @@
     <ClCompile Include="ClassList\CharaClass\PlayerClass\Player.cpp">
       <Filter>ClassList\CharaClass\PlayerClass</Filter>
     </ClCompile>
-    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerBase.cpp">
-      <Filter>ClassList\CharaClass\PlayerClass</Filter>
+    <ClCompile Include="ClassList\3D\Camera\C_Camera.cpp">
+      <Filter>ClassList\3D\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\3D\Shader\Shader.cpp">
+      <Filter>ClassList\3D\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\EnemyBase\EnemyBase.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\EnemyBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\EnemyFactory\EnemyFactory.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\EnemyFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\EnemyManager\EnemyManager.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\EnemyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan\SwordMan.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\SwordMan</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\Shielder\Shielder.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\Shielder</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan\RandSwordMan.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\RandSwordMan</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\Arrow\Arrow.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.cpp">
+      <Filter>ClassList\CharaClass\PlayerClass\PlayerBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.cpp">
+      <Filter>ClassList\CharaClass\PlayerClass\PlayerManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

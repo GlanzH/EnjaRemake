@@ -187,9 +187,19 @@
     <ClInclude Include="Base\GameBase.h" />
     <ClInclude Include="Base\pch.h" />
     <ClInclude Include="Base\StepTimer.h" />
+    <ClInclude Include="ClassList\3D\Camera\C_Camera.h" />
+    <ClInclude Include="ClassList\3D\Shader\Shader.h" />
     <ClInclude Include="ClassList\Base.h" />
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyBase\EnemyBase.h" />
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyFactory\EnemyFactory.h" />
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyManager\EnemyManager.h" />
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\Arrow\Arrow.h" />
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan\RandSwordMan.h" />
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\Shielder\Shielder.h" />
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan\SwordMan.h" />
     <ClInclude Include="ClassList\CharaClass\PlayerClass\Player.h" />
-    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerBase.h" />
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.h" />
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.h" />
     <ClInclude Include="DontDestroyOnLoad.h" />
     <ClInclude Include="MainScene.h" />
     <ClInclude Include="ResultScene.h" />
@@ -211,8 +221,18 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ClassList\3D\Camera\C_Camera.cpp" />
+    <ClCompile Include="ClassList\3D\Shader\Shader.cpp" />
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\EnemyBase\EnemyBase.cpp" />
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\EnemyFactory\EnemyFactory.cpp" />
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\EnemyManager\EnemyManager.cpp" />
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\Arrow\Arrow.cpp" />
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan\RandSwordMan.cpp" />
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\Shielder\Shielder.cpp" />
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan\SwordMan.cpp" />
     <ClCompile Include="ClassList\CharaClass\PlayerClass\Player.cpp" />
-    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerBase.cpp" />
+    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.cpp" />
+    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.cpp" />
     <ClCompile Include="MainScene.cpp" />
     <ClCompile Include="ResultScene.cpp" />
     <ClCompile Include="TitleScene.cpp" />
