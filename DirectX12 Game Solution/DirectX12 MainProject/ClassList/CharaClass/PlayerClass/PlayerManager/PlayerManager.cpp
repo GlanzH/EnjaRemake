@@ -1,19 +1,19 @@
-#include"PlayerBase.h"
+#include"PlayerManager.h"
 
-bool PlayerBase::Initialize()
+bool PlayerManager::Initialize()
 {
 	return false;
 }
 
-void PlayerBase::LoadAssets()
+void PlayerManager::LoadAssets()
 {
 }
 
-int PlayerBase::Update()
+int PlayerManager::Update()
 {
 	return 0;
 }
 
-void PlayerBase::Render()
+void PlayerManager::Render()
 {
 }

@@ -2,11 +2,11 @@
 
 #include"ClassList/Base.h"
 
-class PlayerBase : public Base
+class PlayerManager : public Base
 {
 public:
-	PlayerBase() {};
-	~PlayerBase() {};
+	PlayerManager() {};
+	~PlayerManager() {};
 	bool Initialize();
 	void LoadAssets();
 	int Update();
