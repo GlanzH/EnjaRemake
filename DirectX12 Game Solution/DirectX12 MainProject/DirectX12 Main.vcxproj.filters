@@ -79,6 +79,27 @@
     <Filter Include="ClassList\ResourceManager">
       <UniqueIdentifier>{7a668df8-8472-4a93-8eb9-e17cc3d6e107}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ClassList\DialogueManager">
+      <UniqueIdentifier>{aabd7bab-a606-4f1e-8659-a55f2f377544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI\Coin">
+      <UniqueIdentifier>{ea664066-da71-48f0-b2c9-beba6b8df530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI\RankJudgeManager">
+      <UniqueIdentifier>{71b6c0f3-b33c-47b6-bf53-059f9e970276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI\UIManager">
+      <UniqueIdentifier>{45b83675-889f-489e-80f9-329fe3bd1fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StageClass\GameSceneManager">
+      <UniqueIdentifier>{de84df0b-2177-4e10-9a98-a1bb61e8bbc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StageClass\Ground">
+      <UniqueIdentifier>{22a15137-5d0a-4091-ac10-1b075f94e63c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StageClass\WaveProcess">
+      <UniqueIdentifier>{ad2c5915-3fd8-4fc9-bdfc-0e30c46bd8ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\d3dx12.h">
@@ -156,6 +177,42 @@
     <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.h">
       <Filter>ClassList\CharaClass\PlayerClass\PlayerManager</Filter>
     </ClInclude>
+    <ClInclude Include="ClassList\EnumList\EnumList.h">
+      <Filter>ClassList\EnumList</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\DialogueManager\DialogueManager.h">
+      <Filter>ClassList\DialogueManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\Observer\Observer.h">
+      <Filter>ClassList\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\ResourceManager\ResourceManager.h">
+      <Filter>ClassList\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StatusManager\StatusManager.h">
+      <Filter>ClassList\StatusManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\UI\Coin\Coin.h">
+      <Filter>ClassList\UI\Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\UI\Coin\CoinManager.h">
+      <Filter>ClassList\UI\Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\UI\RankJudgeManager\RankJudgeManager.h">
+      <Filter>ClassList\UI\RankJudgeManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\UI\UIManager\UIManager.h">
+      <Filter>ClassList\UI\UIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StageClass\GameSceneManager\GameSceneManager.h">
+      <Filter>ClassList\StageClass\GameSceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StageClass\Ground\Ground.h">
+      <Filter>ClassList\StageClass\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StageClass\WaveProcess\WaveProcess.h">
+      <Filter>ClassList\StageClass\WaveProcess</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Main.cpp">
@@ -211,6 +268,39 @@
     </ClCompile>
     <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.cpp">
       <Filter>ClassList\CharaClass\PlayerClass\PlayerManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\DialogueManager\DialogueManager.cpp">
+      <Filter>ClassList\DialogueManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\Observer\Observer.cpp">
+      <Filter>ClassList\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\ResourceManager\ResourceManager.cpp">
+      <Filter>ClassList\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\StatusManager\StatusManager.cpp">
+      <Filter>ClassList\StatusManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\UI\Coin\CoinManager.cpp">
+      <Filter>ClassList\UI\Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\UI\Coin\Coin.cpp">
+      <Filter>ClassList\UI\Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\UI\RankJudgeManager\RankJudgeManager.cpp">
+      <Filter>ClassList\UI\RankJudgeManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\UI\UIManager\UIManager.cpp">
+      <Filter>ClassList\UI\UIManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\StageClass\GameSceneManager\GameSceneManager.cpp">
+      <Filter>ClassList\StageClass\GameSceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\StageClass\Ground\Ground.cpp">
+      <Filter>ClassList\StageClass\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\StageClass\WaveProcess\WaveProcess.cpp">
+      <Filter>ClassList\StageClass\WaveProcess</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
