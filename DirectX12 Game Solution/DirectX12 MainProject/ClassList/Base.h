@@ -1,8 +1,7 @@
 #pragma once
 
-#include"Base/dxtk.h"
 #include"Base/pch.h"
-
+#include"Base/dxtk.h"
 using namespace DirectX;
 
 class Base
