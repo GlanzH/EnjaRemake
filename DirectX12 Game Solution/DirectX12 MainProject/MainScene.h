@@ -5,6 +5,8 @@
 #pragma once
 
 #include "Scene.h"
+#include"ClassList/3D/Camera/C_Camera.h"
+#include"ClassList/StageClass/Ground/Ground.h"
 
 using Microsoft::WRL::ComPtr;
 using std::unique_ptr;
@@ -35,7 +37,12 @@ public:
 	void Render() override;
 
 private:
+	C_Camera camera;
+	Ground ground;
 
+	D3DLIGHT9 light{};
 
-
+	DX12::DESCRIPTORHEAP descriptorHeap;
+	DX12::SPRITEBATCH    spriteBatch;
+	DX12::HGPUDESCRIPTOR dx9GpuDescriptor;
 };
