@@ -16,6 +16,8 @@ MainScene::MainScene()
 void MainScene::Initialize()
 {
 	camera.Initialize();
+	UIManager::Instance().Initialize();
+	Score::Instance().Initialize();
 }
 
 // Allocate all memory the Direct3D and Direct2D resources.
@@ -52,6 +54,7 @@ void MainScene::LoadAssets()
 	DXTK->Direct3D9->LightEnable(0, true);
 
 	ground.LoadAseets();
+	UIManager::Instance().LoadAssets();
 }
 
 // Releasing resources required for termination.
@@ -84,7 +87,14 @@ NextScene MainScene::Update(const float deltaTime)
 
 	// TODO: Add your game logic here.
 	camera.Update();
+	UIManager::Instance().Update(deltaTime);
+	Score::Instance().Update(deltaTime);
 
+	if(DXTK->KeyEvent->pressed.Enter)
+	Score::Instance().SetAddScore(300.0f);
+
+	if (DXTK->KeyEvent->pressed.Back)
+		Score::Instance().SetAddScore(-300.0f);
 
 	return NextScene::Continue;
 }
@@ -93,10 +103,35 @@ NextScene MainScene::Update(const float deltaTime)
 void MainScene::Render()
 {
 	// TODO: Add your rendering code here.
+	DXTK->Direct3D9->Clear(DX9::Colors::CornflowerBlue);
+
+	DXTK->Direct3D9->BeginScene();
+	
+	camera.Render();
+
+	DX9::SpriteBatch->Begin();
+
+	UIManager::Instance().Render();
+	
+	DX9::SpriteBatch->End();
+	DXTK->Direct3D9->EndScene();
+
+	DXTK->Direct3D9->UpdateResource();
+
 	DXTK->ResetCommand();
 	DXTK->ClearRenderTarget(Colors::CornflowerBlue);
 
-	camera.Render();
+	const auto heapes = descriptorHeap->Heap();
+	DXTK->CommandList->SetDescriptorHeaps(1, &heapes);
+
+	spriteBatch->Begin(DXTK->CommandList);
+	spriteBatch->Draw(
+		dx9GpuDescriptor,
+		XMUINT2(1280, 720),
+		SimpleMath::Vector2(0.0f, 0.0f)
+	);
+	spriteBatch->End();
 
 	DXTK->ExecuteCommandList();
+	DXTK->Direct3D9->WaitUpdate();
 }

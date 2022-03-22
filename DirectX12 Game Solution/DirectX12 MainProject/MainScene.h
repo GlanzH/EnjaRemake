@@ -7,6 +7,8 @@
 #include "Scene.h"
 #include"ClassList/3D/Camera/C_Camera.h"
 #include"ClassList/StageClass/Ground/Ground.h"
+#include"ClassList/UI/UIManager/UIManager.h"
+#include"ClassList/StatusManager/Score/Score.h"
 
 using Microsoft::WRL::ComPtr;
 using std::unique_ptr;
@@ -39,7 +41,6 @@ public:
 private:
 	C_Camera camera;
 	Ground ground;
-
 	D3DLIGHT9 light{};
 
 	DX12::DESCRIPTORHEAP descriptorHeap;
