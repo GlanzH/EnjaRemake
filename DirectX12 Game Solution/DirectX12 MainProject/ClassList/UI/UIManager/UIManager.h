@@ -21,6 +21,7 @@ public:
 private:
 	UIManager();
 
+	float time_delta;
 	//スコアゲージ
 	DX9::SPRITE score_gauge_top;
 	DX9::SPRITE score_gauge_bottom;

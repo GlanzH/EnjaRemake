@@ -30,7 +30,7 @@ void Score::AddMaxScore() {
 
 void Score::CalcScore()
 {
-	if (IsPlusScore()) {
+	if (IsScorePlus()) {
 		ScoreUp();
 	}
 	else {
@@ -39,9 +39,9 @@ void Score::CalcScore()
 }
 
 void Score::ScoreUp() {
-	score_ = std::min(score_ + 300.0f * time_delta, max_score);
+	score_ = std::min(score_ + SCORE_UPDN_SPEED * time_delta, max_score);
 }
 
 void Score::ScoreDown() {
-	score_ = std::max(score_ - 300.0f * time_delta, max_score);
+	score_ = std::max(score_ - SCORE_UPDN_SPEED * time_delta, max_score);
 }

@@ -55,6 +55,7 @@ void MainScene::LoadAssets()
 
 	ground.LoadAseets();
 	UIManager::Instance().LoadAssets();
+	Combo::Instance().LoadAssets();
 }
 
 // Releasing resources required for termination.
@@ -89,13 +90,16 @@ NextScene MainScene::Update(const float deltaTime)
 	camera.Update();
 	UIManager::Instance().Update(deltaTime);
 	Score::Instance().Update(deltaTime);
-
-	if(DXTK->KeyEvent->pressed.Enter)
-	Score::Instance().SetAddScore(300.0f);
-
-	if (DXTK->KeyEvent->pressed.Back)
+	Combo::Instance().Update(deltaTime);
+	if (DXTK->KeyEvent->pressed.Enter) {
+		Score::Instance().SetAddScore(300.0f);
+		Combo::Instance().AddCombo();
+	}
+	
+	if (DXTK->KeyEvent->pressed.Back) {
 		Score::Instance().SetAddScore(-300.0f);
-
+		Combo::Instance().ResetCombo();
+	}
 	return NextScene::Continue;
 }
 
@@ -111,6 +115,7 @@ void MainScene::Render()
 
 	DX9::SpriteBatch->Begin();
 
+	Combo::Instance().Render();
 	UIManager::Instance().Render();
 	
 	DX9::SpriteBatch->End();

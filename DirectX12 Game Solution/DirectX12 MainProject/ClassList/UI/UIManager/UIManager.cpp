@@ -2,6 +2,8 @@
 #include "ClassList/StatusManager/Score/Score.h"
 
 UIManager::UIManager() {
+	time_delta = 0.0f;
+
 	score_gauge_bottom = nullptr;
 	score_gauge_top = nullptr;
 	score_gauge_width = 0;
@@ -9,6 +11,8 @@ UIManager::UIManager() {
 }
 
 void UIManager::Initialize() {
+	time_delta = 0.0f;
+
 	score_gauge_width = 0;
 	score_gauge = 0;
 }
@@ -19,6 +23,8 @@ void UIManager::LoadAssets() {
 }
 
 void UIManager::Update(const float deltaTime){
+	time_delta = deltaTime;
+
 	score_gauge = Score::Instance().GetScore() * SCORE_GAUGE_DIVIDE;
 	score_gauge_width = SCORE_MIN_WIDTH + (int)score_gauge;
 }

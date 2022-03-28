@@ -9,6 +9,7 @@
 #include"ClassList/StageClass/Ground/Ground.h"
 #include"ClassList/UI/UIManager/UIManager.h"
 #include"ClassList/StatusManager/Score/Score.h"
+#include"ClassList/StatusManager/Combo/Combo.h"
 
 using Microsoft::WRL::ComPtr;
 using std::unique_ptr;

@@ -29,10 +29,11 @@ private:
 	void CalcScore();
 	void ScoreUp();
 	void ScoreDown();
-	bool IsPlusScore() { return add_score_ > 0.0f; }
+	bool IsScorePlus() { return max_score > score_; }
 
 	float score_;
 	float add_score_;
 	float time_delta;
 	float max_score;
+	const float SCORE_UPDN_SPEED = 300.0f;
 };

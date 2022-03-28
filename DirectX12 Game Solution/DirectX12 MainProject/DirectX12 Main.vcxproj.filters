@@ -91,6 +91,9 @@
     <ClCompile Include="ClassList\UI\RankJudgeManager\RankJudgeManager.cpp">
       <Filter>ClassList\UI\RankJudgeManager</Filter>
     </ClCompile>
+    <ClCompile Include="ClassList\StatusManager\Combo\Combo.cpp">
+      <Filter>ClassList\StatusManager\Combo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassList\3D\Camera\C_Camera.h">
@@ -207,6 +210,9 @@
     <ClInclude Include="ClassList\Base.h">
       <Filter>ClassList</Filter>
     </ClInclude>
+    <ClInclude Include="ClassList\StatusManager\Combo\Combo.h">
+      <Filter>ClassList\StatusManager\Combo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -313,6 +319,9 @@
     </Filter>
     <Filter Include="Resource">
       <UniqueIdentifier>{131900a2-6e05-4a2f-8d31-399b36fad157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StatusManager\Combo">
+      <UniqueIdentifier>{66e82ed2-99a4-4226-9a71-a1023e45f815}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
