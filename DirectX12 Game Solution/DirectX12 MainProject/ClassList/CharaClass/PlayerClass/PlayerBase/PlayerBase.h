@@ -2,6 +2,8 @@
 
 #include"ClassList/Base.h"
 
+using namespace DirectX;
+
 class PlayerBase : public Base
 {
 public:
