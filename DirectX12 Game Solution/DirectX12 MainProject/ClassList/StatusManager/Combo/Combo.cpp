@@ -1,7 +1,7 @@
 #include "ClassList/StatusManager/Combo/Combo.h"
 
 Combo::Combo() {
-	combo = 0;
+	combo	   = 0;
 	time_delta = 0.0f;
 	combo_time = 0.0f;
 	combo_time_stop_flag = false;
@@ -12,8 +12,7 @@ Combo::Combo() {
 	combo_gauge	  = nullptr;
 
 	combo_balloon_hight = 0;
-	combo_anime_frame = 0.0f;
-
+	combo_anime_frame	= 0.0f;
 	combo_anime_play_flag = false;
 }
 

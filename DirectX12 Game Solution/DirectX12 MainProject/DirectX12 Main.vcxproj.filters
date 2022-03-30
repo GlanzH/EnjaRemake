@@ -94,6 +94,9 @@
     <ClCompile Include="ClassList\StatusManager\Combo\Combo.cpp">
       <Filter>ClassList\StatusManager\Combo</Filter>
     </ClCompile>
+    <ClCompile Include="ClassList\UI\Audience\Audience.cpp">
+      <Filter>ClassList\UI\Audience</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassList\3D\Camera\C_Camera.h">
@@ -213,6 +216,9 @@
     <ClInclude Include="ClassList\StatusManager\Combo\Combo.h">
       <Filter>ClassList\StatusManager\Combo</Filter>
     </ClInclude>
+    <ClInclude Include="ClassList\UI\Audience\Audience.h">
+      <Filter>ClassList\UI\Audience</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -322,6 +328,9 @@
     </Filter>
     <Filter Include="ClassList\StatusManager\Combo">
       <UniqueIdentifier>{66e82ed2-99a4-4226-9a71-a1023e45f815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI\Audience">
+      <UniqueIdentifier>{3992e185-50df-4a97-a8cf-d190730a58c2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

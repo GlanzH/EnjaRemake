@@ -12,16 +12,15 @@ public:
 	void Update(const float deltaTime);
 	void Render();
 
-	static Combo& Instance() {
-		static Combo instance;
-		return instance;
-	}
-
 	void AddCombo();
 	void ResetCombo();
 	int GetCombo() { return combo; }
 	float GetComboTime() { return combo_time; }
 
+	static Combo& Instance() {
+		static Combo instance;
+		return instance;
+	}
 private:
 	Combo();
 

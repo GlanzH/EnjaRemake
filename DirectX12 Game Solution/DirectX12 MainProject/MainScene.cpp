@@ -17,7 +17,6 @@ void MainScene::Initialize()
 {
 	camera.Initialize();
 	UIManager::Instance().Initialize();
-	Score::Instance().Initialize();
 }
 
 // Allocate all memory the Direct3D and Direct2D resources.
@@ -55,7 +54,6 @@ void MainScene::LoadAssets()
 
 	ground.LoadAseets();
 	UIManager::Instance().LoadAssets();
-	Combo::Instance().LoadAssets();
 }
 
 // Releasing resources required for termination.
@@ -89,8 +87,6 @@ NextScene MainScene::Update(const float deltaTime)
 	// TODO: Add your game logic here.
 	camera.Update();
 	UIManager::Instance().Update(deltaTime);
-	Score::Instance().Update(deltaTime);
-	Combo::Instance().Update(deltaTime);
 	if (DXTK->KeyEvent->pressed.Enter) {
 		Score::Instance().SetAddScore(300.0f);
 		Combo::Instance().AddCombo();
@@ -115,7 +111,6 @@ void MainScene::Render()
 
 	DX9::SpriteBatch->Begin();
 
-	Combo::Instance().Render();
 	UIManager::Instance().Render();
 	
 	DX9::SpriteBatch->End();
