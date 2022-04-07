@@ -37,6 +37,7 @@ public:
 	void Render() override;
 
 private:
+	DX9::MODEL forest;
 	C_Camera camera;
 	Ground ground;
 

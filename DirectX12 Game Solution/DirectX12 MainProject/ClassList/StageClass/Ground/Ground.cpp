@@ -15,4 +15,5 @@ int Ground::Update()
 
 void Ground::Render()
 {
+	forest->Draw();
 }

@@ -100,6 +100,9 @@
     <Filter Include="ClassList\StageClass\WaveProcess">
       <UniqueIdentifier>{ad2c5915-3fd8-4fc9-bdfc-0e30c46bd8ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ClassList\CharaClass\PlayerClass\PlayerAttack">
+      <UniqueIdentifier>{5b0fb1f5-f79f-436a-8142-e967754191e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\d3dx12.h">
@@ -213,6 +216,9 @@
     <ClInclude Include="ClassList\StageClass\WaveProcess\WaveProcess.h">
       <Filter>ClassList\StageClass\WaveProcess</Filter>
     </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerAttack\PlayerAttack.h">
+      <Filter>ClassList\CharaClass\PlayerClass\PlayerAttack</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Main.cpp">
@@ -301,6 +307,9 @@
     </ClCompile>
     <ClCompile Include="ClassList\StageClass\WaveProcess\WaveProcess.cpp">
       <Filter>ClassList\StageClass\WaveProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerAttack\PlayerAttack.cpp">
+      <Filter>ClassList\CharaClass\PlayerClass\PlayerAttack</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

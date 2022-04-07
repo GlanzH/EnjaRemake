@@ -50,7 +50,7 @@ void MainScene::LoadAssets()
 	light.Specular = DX9::Colors::Value(1.0f, 1.0f, 1.0f, 1.0f);
 	DXTK->Direct3D9->SetLight(100.0f, light);
 	DXTK->Direct3D9->LightEnable(0, true);
-
+	
 	ground.LoadAseets();
 }
 
@@ -92,11 +92,41 @@ NextScene MainScene::Update(const float deltaTime)
 // Draws the scene.
 void MainScene::Render()
 {
-	// TODO: Add your rendering code here.
-	DXTK->ResetCommand();
-	DXTK->ClearRenderTarget(Colors::CornflowerBlue);
+    // TODO: Add your rendering code here.
+	DXTK->Direct3D9->Clear(DX9::Colors::CornflowerBlue);
 
+	DXTK->Direct3D9->BeginScene();
+	
+	//3D•`‰æ
 	camera.Render();
+	ground.Render();
+	
+	//audience->Render();
 
+	DX9::SpriteBatch->Begin();
+
+	//2D•`‰æ
+
+	DX9::SpriteBatch->End();
+	DXTK->Direct3D9->EndScene();
+
+
+	DXTK->Direct3D9->UpdateResource();
+
+	DXTK->ResetCommand();
+	DXTK->ClearRenderTarget(DirectX::Colors::CornflowerBlue);
+
+	const auto heapes = descriptorHeap->Heap();
+	DXTK->CommandList->SetDescriptorHeaps(1, &heapes);
+
+	spriteBatch->Begin(DXTK->CommandList);
+	spriteBatch->Draw(
+		dx9GpuDescriptor,
+		XMUINT2(1280, 720),
+		SimpleMath::Vector2(0.0f, 0.0f)
+	);
+
+	spriteBatch->End();
 	DXTK->ExecuteCommandList();
+	DXTK->Direct3D9->WaitUpdate();
 }

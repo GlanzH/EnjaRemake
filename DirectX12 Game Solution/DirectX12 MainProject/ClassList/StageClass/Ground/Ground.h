@@ -15,6 +15,6 @@ public:
 	void Render();
 private:
 	DX9::MODEL forest;
-
+	SimpleMath::Vector3 pos;
 
 };
