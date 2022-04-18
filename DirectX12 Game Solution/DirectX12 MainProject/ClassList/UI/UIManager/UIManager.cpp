@@ -6,6 +6,7 @@
 void UIManager::Initialize() {
 	Score::Instance().Initialize();
 	Combo::Instance().Initialize();
+	Audience::Instance().Intialize();
 }
 
 void UIManager::LoadAssets() {
@@ -17,6 +18,7 @@ void UIManager::LoadAssets() {
 void UIManager::Update(const float deltaTime){
 	Score::Instance().Update(deltaTime);
 	Combo::Instance().Update(deltaTime);
+	Audience::Instance().Update(deltaTime);
 }
 
 void UIManager::Render(){

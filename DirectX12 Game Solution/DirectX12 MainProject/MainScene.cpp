@@ -87,15 +87,6 @@ NextScene MainScene::Update(const float deltaTime)
 	// TODO: Add your game logic here.
 	camera.Update();
 	UIManager::Instance().Update(deltaTime);
-	if (DXTK->KeyEvent->pressed.Enter) {
-		Score::Instance().SetAddScore(300.0f);
-		Combo::Instance().AddCombo();
-	}
-	
-	if (DXTK->KeyEvent->pressed.Back) {
-		Score::Instance().SetAddScore(-300.0f);
-		Combo::Instance().ResetCombo();
-	}
 	return NextScene::Continue;
 }
 
