@@ -208,7 +208,10 @@
     <ClInclude Include="ClassList\StageClass\GameSceneManager\GameSceneManager.h" />
     <ClInclude Include="ClassList\StageClass\Ground\Ground.h" />
     <ClInclude Include="ClassList\StageClass\WaveProcess\WaveProcess.h" />
+    <ClInclude Include="ClassList\StatusManager\Combo\Combo.h" />
+    <ClInclude Include="ClassList\StatusManager\Score\Score.h" />
     <ClInclude Include="ClassList\StatusManager\StatusManager.h" />
+    <ClInclude Include="ClassList\UI\Audience\Audience.h" />
     <ClInclude Include="ClassList\UI\Coin\Coin.h" />
     <ClInclude Include="ClassList\UI\Coin\CoinManager.h" />
     <ClInclude Include="ClassList\UI\RankJudgeManager\RankJudgeManager.h" />
@@ -253,7 +256,10 @@
     <ClCompile Include="ClassList\StageClass\GameSceneManager\GameSceneManager.cpp" />
     <ClCompile Include="ClassList\StageClass\Ground\Ground.cpp" />
     <ClCompile Include="ClassList\StageClass\WaveProcess\WaveProcess.cpp" />
+    <ClCompile Include="ClassList\StatusManager\Combo\Combo.cpp" />
+    <ClCompile Include="ClassList\StatusManager\Score\Score.cpp" />
     <ClCompile Include="ClassList\StatusManager\StatusManager.cpp" />
+    <ClCompile Include="ClassList\UI\Audience\Audience.cpp" />
     <ClCompile Include="ClassList\UI\Coin\Coin.cpp" />
     <ClCompile Include="ClassList\UI\Coin\CoinManager.cpp" />
     <ClCompile Include="ClassList\UI\RankJudgeManager\RankJudgeManager.cpp" />
