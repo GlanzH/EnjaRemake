@@ -9,12 +9,19 @@
 // Initialize member variables.
 MainScene::MainScene()
 {
+	player = new Player;
+}
 
+MainScene::~MainScene()
+{
+	delete player;
+	Terminate();
 }
 
 // Initialize a variable and audio resources.
 void MainScene::Initialize()
 {
+	player->Initialize();
 	camera.Initialize();
 }
 
@@ -51,6 +58,7 @@ void MainScene::LoadAssets()
 	DXTK->Direct3D9->SetLight(100.0f, light);
 	DXTK->Direct3D9->LightEnable(0, true);
 	
+	player->LoadAseets();
 	ground.LoadAseets();
 }
 
@@ -83,7 +91,8 @@ NextScene MainScene::Update(const float deltaTime)
 	UNREFERENCED_PARAMETER(deltaTime);
 
 	// TODO: Add your game logic here.
-	camera.Update();
+	player->Update(deltaTime);
+	camera.Update(player,deltaTime);
 
 
 	return NextScene::Continue;
@@ -98,6 +107,7 @@ void MainScene::Render()
 	DXTK->Direct3D9->BeginScene();
 	
 	//3D•`‰æ
+	player->Render();
 	camera.Render();
 	ground.Render();
 	

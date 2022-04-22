@@ -6,14 +6,19 @@ bool C_Camera::Initialize()
 	camera->SetView(SimpleMath::Vector3(0.0,fixed_pos, 20.0), SimpleMath::Vector3::Zero);
 	//ƒJƒƒ‰‚ÌŒü‚«E‰f‚·‹——£		//Šp“xA‘¤–Ê
 	camera->SetPerspectiveFieldOfView(XMConvertToRadians(rotate_angle),aspect,min_screen_range,max_screen_range);
+	camera_z += 40.f;
 	return false;
 }
 
-int C_Camera::Update()
+int C_Camera::Update(Player* player,const float deltaTime)
 {
+	/*if (camera_pos_num == ZOOM_UP)
+		camera_z -= 15.f * deltaTime;
+	else if (camera_pos_num == ZOOM_OUT)
+		camera_z += 40.f * deltaTime;*/
 	camera_z = std::clamp(camera_z, -10.0f,20.0f);
-
-	//camera->SetPosition(base->GetModel()->GetPosition().x, fixed_pos, -camera_z);
+	
+	camera->SetPosition(player->GetModel()->GetPosition().x, fixed_pos, -camera_z);
 	SimpleMath::Vector3 camera_pos = camera.GetPosition();
 	if (camera_pos.x >= 40.0f) {
 		camera_pos.x = 40.0f;

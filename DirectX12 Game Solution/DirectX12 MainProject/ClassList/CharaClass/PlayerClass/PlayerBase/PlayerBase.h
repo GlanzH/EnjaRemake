@@ -44,39 +44,6 @@ private:
 	const int sidebox_size_x = 2;
 	const int sidebox_size_y = 9;
 	const int sidebox_size_z = 1;
-	
-
-	//1/2
-	const float half = 0.5f;
-	//重力加速度
-	const float gravity_ = 170.0f;
-	//初速
-	const float V0 = 70.5f;
-
-	//ジャンプタイミング
-	bool  jump_start_flag;
-	float jump_start_time;
-	float jump_start_time_max;
-
-	bool jump_end_flag;
-
-
-
-	//攻撃の時間
-	bool  attack_flag;
-	float attack_time;
-	float attack_zeit_max;
-
-
-	//攻撃中　ジャンプ不可
-	enum UNDER_ATTACK_STATE
-	{
-		NOMAL,
-		ATTACK
-	};
-
-	UNDER_ATTACK_STATE under_attack_state_mode;
-
 	//無敵時間
 	bool        invincible_flag;
 	float		invincible_time;
@@ -96,30 +63,7 @@ private:
 	bool damage_flag;
 
 	int damage_se_count = 0;
-
-	//モーションの名前
-	enum
-	{
-		STAND,
-		RUN,
-		ACT1,
-		ACT2,
-		FINISH,
-		REBOUND,
-		JUMP,
-		ROLL,
-		DAMAGE1,
-		MOTION_MAX
-	};
-
-	//攻撃の向き
-	enum Direction_State
-	{
-		LEFT,
-		RIGHT
-	};
-
-	Direction_State direction_state_mode;
+	
 
 	//『使用しない』****************************//
 		//アピール
@@ -153,8 +97,7 @@ private:
 	float avoidance_move;
 
 
-	//攻撃の種類 1:弱攻撃　2:突き攻撃
-	int attack_type;
+	
 
 	//ノックバック
 	void Knock_back_Move();
