@@ -9,6 +9,7 @@
 #include"ClassList/3D/Camera/C_Camera.h"
 #include"ClassList/StageClass/Ground/Ground.h"
 #include"ClassList/CharaClass/PlayerClass/Player.h"
+#include"ClassList/StatusManager/StatusManager.h"
 
 using Microsoft::WRL::ComPtr;
 using std::unique_ptr;

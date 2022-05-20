@@ -12,17 +12,20 @@ public:
 	void LoadAseets();
 	int Update(const float deltaTime);
 	void Move(const float deltaTime);
-	void PlayerAnimation(DX9::SKINNEDMODEL& player, const int enableTrack);
+	void Attack(const float deltaTime);
+	void SetAnimation(DX9::SKINNEDMODEL& player, const int enableTrack);
 	void Render();
+	//移動制限
+	void Player_limit();
 	DX9::SKINNEDMODEL& GetModel() {return player; }
 
 private:
 	DX9::SKINNEDMODEL player;
-
-	float player_speed;
 	SimpleMath::Vector3 player_pos = SimpleMath::Vector3(0.0f, 0.0f, 50.0f);
 	float model_scale = 0.25f;
 	float model_rotetion;
+
+	float player_speed;
 	//ジャンプしてるかのフラグ
 	bool jump_flag_;
 	float jump_time_;
@@ -38,25 +41,33 @@ private:
 	const float gravity_ = 170.0f;
 	//初速
 	const float V0 = 70.5f;
-	/*enum
+
+	float upper_start;
+	float upper_end;
+	//ヒットストップを発動させるフラグ
+	bool hit_stop_flag;
+	enum
 	{
 		STAND,
 		RUN,
 		ACT1,
-		ACT2,
 		FINISH,
 		REBOUND,
-		JUMP,
-		ROLL,
 		DAMAGE1,
-		MOTION_MAX
-	};*/
-	enum 
-	{
-		STAND,
-		RUN,
+		ROLL,
 		JUMP,
 		MOTION_MAX
 	};
-
+	//上段(変数宣言)
+	enum Upper_State
+	{
+		NOT_UPPER,
+		UPPER_ATTACK
+	};
+	Upper_State upper_state_mode;
+	//プレイヤーの移動制限(幅)
+	const float model_collision_detection_X = 67.0f;
+	const float model_collision_detection_Y_MAX = 1100.0f;
+	const float model_collision_detection_Y_MIN = 0.0f;
+	const float model_collision_detection_Z = 100.0f;
 };

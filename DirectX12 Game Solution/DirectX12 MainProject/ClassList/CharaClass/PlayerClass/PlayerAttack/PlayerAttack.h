@@ -1,6 +1,16 @@
 #include"Base/pch.h"
 #include"Base/dxtk.h"
 
+using namespace DirectX;
+
+typedef struct Collisions {
+	BoundingBox  sword_box;
+	BoundingBox  box;
+
+	BoundingBox right_box;
+	BoundingBox left_box;
+
+};
 
 class PlayerAttack
 {
@@ -8,13 +18,27 @@ public:
 	PlayerAttack();
 	~PlayerAttack(){};
 	bool Initialize();
-	int Update();
+	void LoadAseets(DX9::SKINNEDMODEL model);
+	int Update(DX9::SKINNEDMODEL model,const float deltaTime,SimpleMath::Vector3 pos);
+	void Attack();
+	void Frip();
 	
 private:
 	//攻撃の時間
 	bool  attack_flag;
 	float attack_time;
 	float attack_zeit_max;
+	//当たり判定用モデル
+	DX9::MODEL sword_collision;
+	DX9::MODEL collision;
+	Collisions col;
+
+	DX9::MODEL right_collision;
+	Collisions right_col;
+	DX9::MODEL left_collision;
+	Collisions left_col;
+
+	D3DMATERIAL9 material;
 	//攻撃中　ジャンプ不可
 	enum UNDER_ATTACK_STATE
 	{

@@ -5,6 +5,7 @@
 #include "Base/pch.h"
 #include "Base/dxtk.h"
 #include "SceneFactory.h"
+#include"ClassList/StatusManager/StatusManager.h"
 
 // Initialize member variables.
 MainScene::MainScene()

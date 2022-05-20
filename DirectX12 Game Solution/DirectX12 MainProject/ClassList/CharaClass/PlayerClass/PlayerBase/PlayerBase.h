@@ -13,6 +13,8 @@ public:
 	void LoadAssets();
 	int Update();
 	void Render();
+	//ˆÚ“®§ŒÀ
+	//void Player_limit();
 
 private:
 	D3DMATERIAL9 material;
