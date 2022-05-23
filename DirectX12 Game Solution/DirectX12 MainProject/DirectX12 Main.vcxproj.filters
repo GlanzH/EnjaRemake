@@ -61,9 +61,6 @@
     <Filter Include="ClassList\CharaClass\PlayerClass\PlayerBase">
       <UniqueIdentifier>{eb3dfad6-5c59-4423-b928-37436d323f62}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ClassList\CharaClass\PlayerClass\PlayerManager">
-      <UniqueIdentifier>{2511e99d-bb7f-4f44-91f8-06d0e61dc554}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ClassList\Observer">
       <UniqueIdentifier>{5f3ee14a-87cf-45c8-94f0-b3d428012523}</UniqueIdentifier>
     </Filter>
@@ -177,9 +174,6 @@
     <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.h">
       <Filter>ClassList\CharaClass\PlayerClass\PlayerBase</Filter>
     </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.h">
-      <Filter>ClassList\CharaClass\PlayerClass\PlayerManager</Filter>
-    </ClInclude>
     <ClInclude Include="ClassList\EnumList\EnumList.h">
       <Filter>ClassList\EnumList</Filter>
     </ClInclude>
@@ -271,9 +265,6 @@
     </ClCompile>
     <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.cpp">
       <Filter>ClassList\CharaClass\PlayerClass\PlayerBase</Filter>
-    </ClCompile>
-    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.cpp">
-      <Filter>ClassList\CharaClass\PlayerClass\PlayerManager</Filter>
     </ClCompile>
     <ClCompile Include="ClassList\DialogueManager\DialogueManager.cpp">
       <Filter>ClassList\DialogueManager</Filter>

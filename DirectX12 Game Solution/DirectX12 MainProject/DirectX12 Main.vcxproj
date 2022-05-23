@@ -200,7 +200,6 @@
     <ClInclude Include="ClassList\CharaClass\PlayerClass\Player.h" />
     <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerAttack\PlayerAttack.h" />
     <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.h" />
-    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.h" />
     <ClInclude Include="ClassList\DialogueManager\DialogueManager.h" />
     <ClInclude Include="ClassList\EnumList\EnumList.h" />
     <ClInclude Include="ClassList\Observer\Observer.h" />
@@ -246,7 +245,6 @@
     <ClCompile Include="ClassList\CharaClass\PlayerClass\Player.cpp" />
     <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerAttack\PlayerAttack.cpp" />
     <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.cpp" />
-    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerManager\PlayerManager.cpp" />
     <ClCompile Include="ClassList\DialogueManager\DialogueManager.cpp" />
     <ClCompile Include="ClassList\Observer\Observer.cpp" />
     <ClCompile Include="ClassList\ResourceManager\ResourceManager.cpp" />

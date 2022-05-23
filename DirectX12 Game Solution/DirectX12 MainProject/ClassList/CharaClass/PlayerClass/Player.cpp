@@ -6,7 +6,6 @@ Player::Player(){
 	jump_flag_ = false;
 	jump_time_ = 0.0f;
 	 model_rotetion =-90.0f;
-	//jump_start_v_ = 0.0f;
 }
 
 bool Player::Initialize(){
@@ -45,6 +44,7 @@ int Player::Update(const float deltaTime){
 	SetAnimation(player, STAND);
 	//PlayerˆÚ“®
 	Move(deltaTime);
+	//PlayerUŒ‚
 	Attack(deltaTime);
 	Player_limit();
 	player->AdvanceTime(deltaTime);
@@ -55,14 +55,15 @@ void Player::Move(const float deltaTime){
 	if (DXTK->KeyState->Right || DXTK->GamePadState[0].dpad.right || DXTK->GamePadState->thumbSticks.leftX > 0){
 		player->Move(0.0f, 0.0f, -player_speed * deltaTime);
 		player->SetRotation(0.0f, DirectX::XMConvertToRadians(model_rotetion),0.0f);
-
 		SetAnimation(player, RUN);
 	}
+
 	if (DXTK->KeyState->Left || DXTK->GamePadState[0].dpad.left || DXTK->GamePadState->thumbSticks.leftX < 0){
 		player->Move(0.0f, 0.0f, -player_speed * deltaTime);
 		player->SetRotation(0.0f, DirectX::XMConvertToRadians(-model_rotetion), 0.0f);
 		SetAnimation(player, RUN);
 	}
+
 	if (!jump_flag_){
 		if (DXTK->KeyEvent->pressed.Up || DXTK->GamePadEvent->a == GamePad::ButtonStateTracker::PRESSED){
 			jump_flag_ = true;
@@ -70,6 +71,7 @@ void Player::Move(const float deltaTime){
 			jump_start_v_ = player->Position.y;
 		}
 	}
+
 	if (jump_flag_){
 		jump_time_ += deltaTime;
 		auto pos = player->GetPosition();
