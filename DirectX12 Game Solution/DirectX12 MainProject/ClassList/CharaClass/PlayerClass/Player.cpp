@@ -19,8 +19,8 @@ bool Player::Initialize(){
 	jump_start_time = 0.0f;
 	jump_start_time_max = 0.000001f;
 	jump_end_flag = false;
-	upper_start = 0.0f;
-	upper_end = 0.383f;
+	/*upper_start = 0.0f;
+	upper_end = 0.383f;*/
 	return false;
 }
 
@@ -91,22 +91,16 @@ void Player::Attack(const float deltaTime)
 	{
 		if (DXTK->KeyEvent->pressed.A || DXTK->GamePadEvent[0].y == GamePad::ButtonStateTracker::PRESSED)
 		{
-			upper_start += deltaTime;
-			SetAnimation(player, ACT1);
+			upper_state_mode = Upper_State::UPPER_ATTACK;
 		}
-		if (upper_start >0.1f)
+		if (upper_state_mode ==Upper_State::UPPER_ATTACK)
 		{
-		 hit_stop_flag =true;
-		}
-	}
-	if (upper_start >= upper_end) {
-		upper_state_mode = Upper_State::NOT_UPPER;
-		upper_start = 0.0f;
-		player->SetTrackPosition(ACT1, 0.0);
-		//effect_count = 0;
-		//attack_type = 0;
-		hit_stop_flag = false;
+			SetAnimation(player, ACT1);
+			if (true)
+			{
 
+			}
+		}
 	}
 }
 void Player::Render(){

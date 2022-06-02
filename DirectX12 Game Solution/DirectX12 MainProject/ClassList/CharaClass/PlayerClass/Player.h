@@ -1,5 +1,4 @@
 #pragma once
-
 #include"ClassList/CharaClass/PlayerClass/PlayerBase/PlayerBase.h"
 using namespace DirectX;
 
@@ -42,29 +41,28 @@ private:
 	//初速
 	const float V0 = 70.5f;
 
-	float upper_start;
-	float upper_end;
-	//ヒットストップを発動させるフラグ
-	bool hit_stop_flag;
+	
+	
 	enum
 	{
 		STAND,
 		RUN,
 		ACT1,
+		ACT2,
 		FINISH,
 		REBOUND,
-		DAMAGE1,
-		ROLL,
 		JUMP,
+		ROLL,
+		DAMAGE1,
 		MOTION_MAX
 	};
-	//上段(変数宣言)
-	enum Upper_State
-	{
-		NOT_UPPER,
-		UPPER_ATTACK
-	};
-	Upper_State upper_state_mode;
+	////上段(変数宣言)
+	//enum Upper_State
+	//{
+	//	NOT_UPPER,
+	//	UPPER_ATTACK
+	//};
+	//Upper_State upper_state_mode;
 	//プレイヤーの移動制限(幅)
 	const float model_collision_detection_X = 67.0f;
 	const float model_collision_detection_Y_MAX = 1100.0f;
