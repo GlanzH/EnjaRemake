@@ -20,7 +20,7 @@ public:
 	bool Initialize();
 	void LoadAseets(DX9::SKINNEDMODEL model);
 	int Update(DX9::SKINNEDMODEL model,const float deltaTime,SimpleMath::Vector3 pos);
-	void Attack();
+	void Attack(const float deltaTime, DX9::SKINNEDMODEL model);
 	void Frip();
 	
 private:
@@ -52,8 +52,21 @@ private:
 		LEFT,
 		RIGHT
 	};
-
 	Direction_State direction_state_mode;
+	//上段(変数宣言)
+	enum Upper_State
+	{
+		NOT_UPPER,
+		UPPER_ATTACK
+	};
+	Upper_State upper_state_mode;
 	//攻撃の種類 1:弱攻撃　2:突き攻撃
 	int attack_type;
+
+
+
+	float upper_start;
+	float upper_end;
+	//ヒットストップを発動させるフラグ
+	bool hit_stop_flag;
 };
