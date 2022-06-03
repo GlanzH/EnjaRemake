@@ -3,7 +3,7 @@
 #include"ClassList/EnumList/EnumList.h"
 #include"ClassList/CharaClass/PlayerClass/Player.h"
 #include "ClassList/StatusManager/StatusManager.h"
-#include "Base/DX12Effekseer.h"
+//#include "Base/DX12Effekseer.h"
 
 using namespace DirectX;
 

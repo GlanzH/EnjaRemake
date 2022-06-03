@@ -181,6 +181,8 @@
     </FXCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\hoge\DirectX12 Game Solution\DirectX12 MainProject\Base\DX12Effekseer.h" />
+    <ClInclude Include="..\..\..\hoge\DirectX12 Game Solution\DirectX12 MainProject\Base\DX12Effekseer2D.h" />
     <ClInclude Include="Base\d3dx12.h" />
     <ClInclude Include="Base\dxtk.h" />
     <ClInclude Include="Base\DXTKHelpers.h" />
@@ -207,7 +209,10 @@
     <ClInclude Include="ClassList\StageClass\GameSceneManager\GameSceneManager.h" />
     <ClInclude Include="ClassList\StageClass\Ground\Ground.h" />
     <ClInclude Include="ClassList\StageClass\WaveProcess\WaveProcess.h" />
+    <ClInclude Include="ClassList\StatusManager\Combo\Combo.h" />
+    <ClInclude Include="ClassList\StatusManager\Score\Score.h" />
     <ClInclude Include="ClassList\StatusManager\StatusManager.h" />
+    <ClInclude Include="ClassList\UI\Audience\Audience.h" />
     <ClInclude Include="ClassList\UI\Coin\Coin.h" />
     <ClInclude Include="ClassList\UI\Coin\CoinManager.h" />
     <ClInclude Include="ClassList\UI\RankJudgeManager\RankJudgeManager.h" />
@@ -220,6 +225,8 @@
     <ClInclude Include="TitleScene.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\hoge\DirectX12 Game Solution\DirectX12 MainProject\Base\DX12Effekseer.cpp" />
+    <ClCompile Include="..\..\..\hoge\DirectX12 Game Solution\DirectX12 MainProject\Base\DX12Effekseer2D.cpp" />
     <ClCompile Include="Base\GameBase.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
@@ -251,7 +258,10 @@
     <ClCompile Include="ClassList\StageClass\GameSceneManager\GameSceneManager.cpp" />
     <ClCompile Include="ClassList\StageClass\Ground\Ground.cpp" />
     <ClCompile Include="ClassList\StageClass\WaveProcess\WaveProcess.cpp" />
+    <ClCompile Include="ClassList\StatusManager\Combo\Combo.cpp" />
+    <ClCompile Include="ClassList\StatusManager\Score\Score.cpp" />
     <ClCompile Include="ClassList\StatusManager\StatusManager.cpp" />
+    <ClCompile Include="ClassList\UI\Audience\Audience.cpp" />
     <ClCompile Include="ClassList\UI\Coin\Coin.cpp" />
     <ClCompile Include="ClassList\UI\Coin\CoinManager.cpp" />
     <ClCompile Include="ClassList\UI\RankJudgeManager\RankJudgeManager.cpp" />

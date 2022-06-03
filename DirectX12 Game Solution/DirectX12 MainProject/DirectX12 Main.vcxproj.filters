@@ -1,246 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Base">
-      <UniqueIdentifier>{47974e81-ff42-4d0c-8227-fa99f8c69fd2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource">
-      <UniqueIdentifier>{29c1d6e3-875e-4d01-a01d-0974e170e5c1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene">
-      <UniqueIdentifier>{d7d56ad3-60f4-40ad-b499-8133f5f75990}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList">
-      <UniqueIdentifier>{a065555f-997b-4fc1-87ed-332595662c52}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass">
-      <UniqueIdentifier>{d6d106a0-6222-4813-9197-5e21f93d72bc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\EnumList">
-      <UniqueIdentifier>{2a7c4f6d-d77f-481c-ba7b-2d87e7ae2f12}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\EnemyClass">
-      <UniqueIdentifier>{5ab1708a-f720-44c3-8ad9-94d883392a9b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\PlayerClass">
-      <UniqueIdentifier>{cac97e61-42f0-4b5a-9e37-a5b1609bad3f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\3D">
-      <UniqueIdentifier>{22a60aaa-bf30-4b59-8a4d-d10e714c85bc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\3D\Camera">
-      <UniqueIdentifier>{f5ad666c-ade7-44ee-952a-7c36a64bcad1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\3D\shader">
-      <UniqueIdentifier>{090e2344-05fd-4ce9-b47c-7a5e93a2cc64}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\EnemyClass\EnemyBase">
-      <UniqueIdentifier>{dbf033a6-89c3-4670-98fc-2ddfb7290ccb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\EnemyClass\Individual">
-      <UniqueIdentifier>{1476c5ac-df9a-426f-8fc3-3b447e9885d0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\EnemyClass\EnemyManager">
-      <UniqueIdentifier>{e8a76bd4-cc36-4c68-86b7-5075abe9730f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\EnemyClass\EnemyFactory">
-      <UniqueIdentifier>{75b5674a-2fec-4532-b3f3-4048bf051ab7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\Arrow">
-      <UniqueIdentifier>{ca9ca0a5-75a4-4d61-baa0-e395ea7d0652}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan">
-      <UniqueIdentifier>{7a551290-13f5-4d67-9087-8bd78d6debe9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\Shielder">
-      <UniqueIdentifier>{d0d48b8b-7b31-4ff0-ab82-2f614557a753}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan">
-      <UniqueIdentifier>{ebcaf918-fb27-46f5-b42b-1864df4dd2b7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\PlayerClass\PlayerBase">
-      <UniqueIdentifier>{eb3dfad6-5c59-4423-b928-37436d323f62}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\Observer">
-      <UniqueIdentifier>{5f3ee14a-87cf-45c8-94f0-b3d428012523}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\UI">
-      <UniqueIdentifier>{04bbc287-1526-4a32-8e2a-2f22c03a81e8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\StageClass">
-      <UniqueIdentifier>{d1d6836f-924c-4cc0-bfb5-56ea2bfaf66e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\StatusManager">
-      <UniqueIdentifier>{b0b680db-1d17-4bbf-bc85-4419e43da257}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\ResourceManager">
-      <UniqueIdentifier>{7a668df8-8472-4a93-8eb9-e17cc3d6e107}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\DialogueManager">
-      <UniqueIdentifier>{aabd7bab-a606-4f1e-8659-a55f2f377544}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\UI\Coin">
-      <UniqueIdentifier>{ea664066-da71-48f0-b2c9-beba6b8df530}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\UI\RankJudgeManager">
-      <UniqueIdentifier>{71b6c0f3-b33c-47b6-bf53-059f9e970276}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\UI\UIManager">
-      <UniqueIdentifier>{45b83675-889f-489e-80f9-329fe3bd1fc4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\StageClass\GameSceneManager">
-      <UniqueIdentifier>{de84df0b-2177-4e10-9a98-a1bb61e8bbc2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\StageClass\Ground">
-      <UniqueIdentifier>{22a15137-5d0a-4091-ac10-1b075f94e63c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\StageClass\WaveProcess">
-      <UniqueIdentifier>{ad2c5915-3fd8-4fc9-bdfc-0e30c46bd8ef}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ClassList\CharaClass\PlayerClass\PlayerAttack">
-      <UniqueIdentifier>{5b0fb1f5-f79f-436a-8142-e967754191e8}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Base\d3dx12.h">
-      <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Base\pch.h">
-      <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Base\StepTimer.h">
-      <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Base\GameBase.h">
-      <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Base\dxtk.h">
-      <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Base\DXTKHelpers.h">
-      <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="DontDestroyOnLoad.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\Base.h">
-      <Filter>ClassList</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneFactory.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="ResultScene.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="MainScene.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="TitleScene.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\PlayerClass\Player.h">
-      <Filter>ClassList\CharaClass\PlayerClass</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\3D\Camera\C_Camera.h">
-      <Filter>ClassList\3D\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\3D\Shader\Shader.h">
-      <Filter>ClassList\3D\shader</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyBase\EnemyBase.h">
-      <Filter>ClassList\CharaClass\EnemyClass\EnemyBase</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyFactory\EnemyFactory.h">
-      <Filter>ClassList\CharaClass\EnemyClass\EnemyFactory</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyManager\EnemyManager.h">
-      <Filter>ClassList\CharaClass\EnemyClass\EnemyManager</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan\SwordMan.h">
-      <Filter>ClassList\CharaClass\EnemyClass\Individual\SwordMan</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\Shielder\Shielder.h">
-      <Filter>ClassList\CharaClass\EnemyClass\Individual\Shielder</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan\RandSwordMan.h">
-      <Filter>ClassList\CharaClass\EnemyClass\Individual\RandSwordMan</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\Arrow\Arrow.h">
-      <Filter>ClassList\CharaClass\EnemyClass\Individual\Arrow</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.h">
-      <Filter>ClassList\CharaClass\PlayerClass\PlayerBase</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\EnumList\EnumList.h">
-      <Filter>ClassList\EnumList</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\DialogueManager\DialogueManager.h">
-      <Filter>ClassList\DialogueManager</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\Observer\Observer.h">
-      <Filter>ClassList\Observer</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\ResourceManager\ResourceManager.h">
-      <Filter>ClassList\ResourceManager</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\StatusManager\StatusManager.h">
-      <Filter>ClassList\StatusManager</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\UI\Coin\Coin.h">
-      <Filter>ClassList\UI\Coin</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\UI\Coin\CoinManager.h">
-      <Filter>ClassList\UI\Coin</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\UI\RankJudgeManager\RankJudgeManager.h">
-      <Filter>ClassList\UI\RankJudgeManager</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\UI\UIManager\UIManager.h">
-      <Filter>ClassList\UI\UIManager</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\StageClass\GameSceneManager\GameSceneManager.h">
-      <Filter>ClassList\StageClass\GameSceneManager</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\StageClass\Ground\Ground.h">
-      <Filter>ClassList\StageClass\Ground</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\StageClass\WaveProcess\WaveProcess.h">
-      <Filter>ClassList\StageClass\WaveProcess</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerAttack\PlayerAttack.h">
-      <Filter>ClassList\CharaClass\PlayerClass\PlayerAttack</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Base\Main.cpp">
-      <Filter>Base</Filter>
-    </ClCompile>
-    <ClCompile Include="Base\pch.cpp">
-      <Filter>Base</Filter>
-    </ClCompile>
-    <ClCompile Include="Base\GameBase.cpp">
-      <Filter>Base</Filter>
-    </ClCompile>
-    <ClCompile Include="ResultScene.cpp">
-      <Filter>Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="MainScene.cpp">
-      <Filter>Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="TitleScene.cpp">
-      <Filter>Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="ClassList\CharaClass\PlayerClass\Player.cpp">
-      <Filter>ClassList\CharaClass\PlayerClass</Filter>
-    </ClCompile>
     <ClCompile Include="ClassList\3D\Camera\C_Camera.cpp">
       <Filter>ClassList\3D\Camera</Filter>
     </ClCompile>
     <ClCompile Include="ClassList\3D\Shader\Shader.cpp">
-      <Filter>ClassList\3D\shader</Filter>
+      <Filter>ClassList\3D\Shader</Filter>
     </ClCompile>
     <ClCompile Include="ClassList\CharaClass\EnemyClass\EnemyBase\EnemyBase.cpp">
       <Filter>ClassList\CharaClass\EnemyClass\EnemyBase</Filter>
@@ -251,17 +16,20 @@
     <ClCompile Include="ClassList\CharaClass\EnemyClass\EnemyManager\EnemyManager.cpp">
       <Filter>ClassList\CharaClass\EnemyClass\EnemyManager</Filter>
     </ClCompile>
-    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan\SwordMan.cpp">
-      <Filter>ClassList\CharaClass\EnemyClass\Individual\SwordMan</Filter>
-    </ClCompile>
-    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\Shielder\Shielder.cpp">
-      <Filter>ClassList\CharaClass\EnemyClass\Individual\Shielder</Filter>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\Arrow\Arrow.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\Arrow</Filter>
     </ClCompile>
     <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan\RandSwordMan.cpp">
       <Filter>ClassList\CharaClass\EnemyClass\Individual\RandSwordMan</Filter>
     </ClCompile>
-    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\Arrow\Arrow.cpp">
-      <Filter>ClassList\CharaClass\EnemyClass\Individual\Arrow</Filter>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\Shielder\Shielder.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\Shielder</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan\SwordMan.cpp">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\SwordMan</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\PlayerClass\Player.cpp">
+      <Filter>ClassList\CharaClass\PlayerClass</Filter>
     </ClCompile>
     <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.cpp">
       <Filter>ClassList\CharaClass\PlayerClass\PlayerBase</Filter>
@@ -275,21 +43,6 @@
     <ClCompile Include="ClassList\ResourceManager\ResourceManager.cpp">
       <Filter>ClassList\ResourceManager</Filter>
     </ClCompile>
-    <ClCompile Include="ClassList\StatusManager\StatusManager.cpp">
-      <Filter>ClassList\StatusManager</Filter>
-    </ClCompile>
-    <ClCompile Include="ClassList\UI\Coin\CoinManager.cpp">
-      <Filter>ClassList\UI\Coin</Filter>
-    </ClCompile>
-    <ClCompile Include="ClassList\UI\Coin\Coin.cpp">
-      <Filter>ClassList\UI\Coin</Filter>
-    </ClCompile>
-    <ClCompile Include="ClassList\UI\RankJudgeManager\RankJudgeManager.cpp">
-      <Filter>ClassList\UI\RankJudgeManager</Filter>
-    </ClCompile>
-    <ClCompile Include="ClassList\UI\UIManager\UIManager.cpp">
-      <Filter>ClassList\UI\UIManager</Filter>
-    </ClCompile>
     <ClCompile Include="ClassList\StageClass\GameSceneManager\GameSceneManager.cpp">
       <Filter>ClassList\StageClass\GameSceneManager</Filter>
     </ClCompile>
@@ -299,9 +52,294 @@
     <ClCompile Include="ClassList\StageClass\WaveProcess\WaveProcess.cpp">
       <Filter>ClassList\StageClass\WaveProcess</Filter>
     </ClCompile>
-    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerAttack\PlayerAttack.cpp">
-      <Filter>ClassList\CharaClass\PlayerClass\PlayerAttack</Filter>
+    <ClCompile Include="ClassList\StatusManager\StatusManager.cpp">
+      <Filter>ClassList\StatusManager</Filter>
     </ClCompile>
+    <ClCompile Include="ClassList\StatusManager\Score\Score.cpp">
+      <Filter>ClassList\StatusManager\Score</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\UI\Coin\Coin.cpp">
+      <Filter>ClassList\UI\Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\UI\Coin\CoinManager.cpp">
+      <Filter>ClassList\UI\Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\UI\UIManager\UIManager.cpp">
+      <Filter>ClassList\UI\UIManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\GameBase.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Main.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\pch.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\UI\RankJudgeManager\RankJudgeManager.cpp">
+      <Filter>ClassList\UI\RankJudgeManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\StatusManager\Combo\Combo.cpp">
+      <Filter>ClassList\StatusManager\Combo</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\UI\Audience\Audience.cpp">
+      <Filter>ClassList\UI\Audience</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassList\CharaClass\PlayerClass\PlayerAttack\PlayerAttack.cpp" />
+    <ClCompile Include="..\..\..\hoge\DirectX12 Game Solution\DirectX12 MainProject\Base\DX12Effekseer.cpp">
+      <Filter>ClassList\Effekseer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\hoge\DirectX12 Game Solution\DirectX12 MainProject\Base\DX12Effekseer2D.cpp">
+      <Filter>ClassList\Effekseer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClassList\3D\Camera\C_Camera.h">
+      <Filter>ClassList\3D\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\3D\Shader\Shader.h">
+      <Filter>ClassList\3D\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyBase\EnemyBase.h">
+      <Filter>ClassList\CharaClass\EnemyClass\EnemyBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyFactory\EnemyFactory.h">
+      <Filter>ClassList\CharaClass\EnemyClass\EnemyFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\EnemyManager\EnemyManager.h">
+      <Filter>ClassList\CharaClass\EnemyClass\EnemyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\Arrow\Arrow.h">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan\RandSwordMan.h">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\RandSwordMan</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\Shielder\Shielder.h">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\Shielder</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan\SwordMan.h">
+      <Filter>ClassList\CharaClass\EnemyClass\Individual\SwordMan</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\Player.h">
+      <Filter>ClassList\CharaClass\PlayerClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerBase\PlayerBase.h">
+      <Filter>ClassList\CharaClass\PlayerClass\PlayerBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\DialogueManager\DialogueManager.h">
+      <Filter>ClassList\DialogueManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\EnumList\EnumList.h">
+      <Filter>ClassList\EnumList</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\Observer\Observer.h">
+      <Filter>ClassList\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\ResourceManager\ResourceManager.h">
+      <Filter>ClassList\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StageClass\GameSceneManager\GameSceneManager.h">
+      <Filter>ClassList\StageClass\GameSceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StageClass\Ground\Ground.h">
+      <Filter>ClassList\StageClass\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StageClass\WaveProcess\WaveProcess.h">
+      <Filter>ClassList\StageClass\WaveProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StatusManager\StatusManager.h">
+      <Filter>ClassList\StatusManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StatusManager\Score\Score.h">
+      <Filter>ClassList\StatusManager\Score</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\UI\Coin\CoinManager.h">
+      <Filter>ClassList\UI\Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\UI\Coin\Coin.h">
+      <Filter>ClassList\UI\Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\UI\RankJudgeManager\RankJudgeManager.h">
+      <Filter>ClassList\UI\RankJudgeManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\UI\UIManager\UIManager.h">
+      <Filter>ClassList\UI\UIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DontDestroyOnLoad.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneFactory.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\d3dx12.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\dxtk.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\DXTKHelpers.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\GameBase.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\pch.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\StepTimer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\Base.h">
+      <Filter>ClassList</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\StatusManager\Combo\Combo.h">
+      <Filter>ClassList\StatusManager\Combo</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\UI\Audience\Audience.h">
+      <Filter>ClassList\UI\Audience</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassList\CharaClass\PlayerClass\PlayerAttack\PlayerAttack.h" />
+    <ClInclude Include="..\..\..\hoge\DirectX12 Game Solution\DirectX12 MainProject\Base\DX12Effekseer.h">
+      <Filter>ClassList\Effekseer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\hoge\DirectX12 Game Solution\DirectX12 MainProject\Base\DX12Effekseer2D.h">
+      <Filter>ClassList\Effekseer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ClassList">
+      <UniqueIdentifier>{6212c3c0-c1fb-4e9f-a0b4-edef73882022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\3D">
+      <UniqueIdentifier>{f38ad1ac-f699-4216-91e6-e4d9efd514ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass">
+      <UniqueIdentifier>{078b9b53-5cbe-4ec9-87cc-21bed5cf93ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\DialogueManager">
+      <UniqueIdentifier>{bbeba4bd-76d3-474e-b08b-9aeb551574e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\EnumList">
+      <UniqueIdentifier>{306b9420-963d-4a18-8ca2-91060a68aa1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\Observer">
+      <UniqueIdentifier>{e5902eb9-c408-48c0-88ea-a5b20304deac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\ResourceManager">
+      <UniqueIdentifier>{bd218bef-e777-49a9-85ac-aeacf4947d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StageClass">
+      <UniqueIdentifier>{0b09315d-b751-4af6-93a9-4c7c31bce90c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StatusManager">
+      <UniqueIdentifier>{bf2857d1-3d6e-41ae-802f-3c1d561ce9d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI">
+      <UniqueIdentifier>{c5f0a9d6-5cd2-4f79-87cd-585ee5e0eb71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\3D\Camera">
+      <UniqueIdentifier>{f148097b-86a7-4116-8d5e-475c9dababa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\3D\Shader">
+      <UniqueIdentifier>{121b5d06-b558-4143-bfbd-a2a0648e491f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass">
+      <UniqueIdentifier>{38c7e976-1594-40f7-98a9-413272501ca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\PlayerClass">
+      <UniqueIdentifier>{85ee17b3-049f-43a5-a4fc-043b1c2afb66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\EnemyBase">
+      <UniqueIdentifier>{c0b69c88-2c65-4cab-96e8-9a38d844c62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\EnemyFactory">
+      <UniqueIdentifier>{1ac47894-cc9d-4f47-ac01-a11e5f83a5e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\EnemyManager">
+      <UniqueIdentifier>{294c5ecc-8ece-443c-8125-b65141a940df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual">
+      <UniqueIdentifier>{31f9bc01-d781-4950-878d-2979451c6447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\Arrow">
+      <UniqueIdentifier>{87c30f49-db85-452a-93e4-2f5c34607cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\RandSwordMan">
+      <UniqueIdentifier>{2b627286-31e4-439a-b152-40882397c59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\Shielder">
+      <UniqueIdentifier>{be012993-bc19-4d18-a7f5-55ccd5cb89b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\EnemyClass\Individual\SwordMan">
+      <UniqueIdentifier>{52e78039-804c-4e44-878e-f890acb54657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\CharaClass\PlayerClass\PlayerBase">
+      <UniqueIdentifier>{1e765dfe-0353-4604-83c3-de6e621e844d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StageClass\GameSceneManager">
+      <UniqueIdentifier>{44d7c457-78b5-4144-a61b-ceb1de27b9f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StageClass\Ground">
+      <UniqueIdentifier>{d9be40f7-0e6a-49b4-aaaa-742fc36924ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StageClass\WaveProcess">
+      <UniqueIdentifier>{f0a03a4c-5767-46f1-a458-7ccb15e90173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StatusManager\Score">
+      <UniqueIdentifier>{b4e37677-da94-494a-b2ec-b2b53aeabc28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI\Coin">
+      <UniqueIdentifier>{5fe28610-8d20-4b81-8cf6-72db56a22349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI\RankJudgeManager">
+      <UniqueIdentifier>{60b48075-9033-40e1-afce-9d77e604697f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI\UIManager">
+      <UniqueIdentifier>{9e00adfb-d29d-44a3-8a94-7b92048d4986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{84eec9a7-4c18-4eac-8266-85f4d788afa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{e2bce7e6-94e2-49cb-ba37-190cb0c6b58a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{131900a2-6e05-4a2f-8d31-399b36fad157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\StatusManager\Combo">
+      <UniqueIdentifier>{66e82ed2-99a4-4226-9a71-a1023e45f815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\UI\Audience">
+      <UniqueIdentifier>{3992e185-50df-4a97-a8cf-d190730a58c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClassList\Effekseer">
+      <UniqueIdentifier>{3ff7fe4c-6d5d-47e1-b349-1907c7b49b80}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resource\directx.ico">
@@ -317,8 +355,5 @@
     <Manifest Include="Resource\settings.manifest">
       <Filter>Resource</Filter>
     </Manifest>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,4 @@
 //
-// 
 // MainScene.h
 //
 
@@ -8,8 +7,7 @@
 #include "Scene.h"
 #include"ClassList/3D/Camera/C_Camera.h"
 #include"ClassList/StageClass/Ground/Ground.h"
-#include"ClassList/CharaClass/PlayerClass/Player.h"
-#include"ClassList/StatusManager/StatusManager.h"
+#include"ClassList/UI/UIManager/UIManager.h"
 
 using Microsoft::WRL::ComPtr;
 using std::unique_ptr;
@@ -19,7 +17,7 @@ using namespace DirectX;
 class MainScene final : public Scene {
 public:
 	MainScene();
-	~MainScene();
+	virtual ~MainScene() { Terminate(); }
 
 	MainScene(MainScene&&) = default;
 	MainScene& operator= (MainScene&&) = default;
@@ -40,10 +38,8 @@ public:
 	void Render() override;
 
 private:
-	Player* player;
 	C_Camera camera;
 	Ground ground;
-
 	D3DLIGHT9 light{};
 
 	DX12::DESCRIPTORHEAP descriptorHeap;

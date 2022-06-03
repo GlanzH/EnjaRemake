@@ -12,9 +12,10 @@
 //------------------------------------------------------------------------------
 #include "Base/pch.h"
 #include "Base/dxtk.h"
-
-#include <Effekseer.h>
-#include <EffekseerRendererDX12.h>
+#include"../../Effekseer/include/Effekseer.h"
+#include"../../Effekseer/include/EffekseerRendererDX12.h"
+//#include <Effekseer.h>
+//#include <EffekseerRendererDX12.h>
 
 using namespace  DirectX::SimpleMath;
 typedef Effekseer::Effect*   EFFECT;

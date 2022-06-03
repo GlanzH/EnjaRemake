@@ -99,7 +99,7 @@ void StatusManager::AddHitComboTime() {
 	}
 	combo_time = combo_time_num;
 	combo_flag = true;
-	UIManager::Instance().ResetAnimeFrame();
+	//UIManager::Instance().ResetAnimeFrame();
 	ResetaAnimeFlag();
 	anime_flag = true;
 
@@ -132,25 +132,25 @@ void StatusManager::ResetHitCombo() {
 	return;
 }
 
-void StatusManager::ComboScore() {
-	//コンボ数に応じた観客のリアクション変化
-	switch (combo) {
-	case 1:
-	case 2:
-	case 3:
-		UIManager::Instance().SetAudienceState(1);
-		break;
-
-	default:
-		if (combo >= 4) {
-			UIManager::Instance().PlayCracker();
-			UIManager::Instance().SetAudienceState(2);
-		}
-		break;
-	}
-
-	return;
-}
+//void StatusManager::ComboScore() {
+//	//コンボ数に応じた観客のリアクション変化
+//	switch (combo) {
+//	case 1:
+//	case 2:
+//	case 3:
+//		UIManager::Instance().SetAudienceState(1);
+//		break;
+//
+//	default:
+//		if (combo >= 4) {
+//			UIManager::Instance().PlayCracker();
+//			UIManager::Instance().SetAudienceState(2);
+//		}
+//		break;
+//	}
+//
+//	return;
+//}
 
 void StatusManager::SetWave(int wave_num) {
 	//ウェーブごとの時間設定

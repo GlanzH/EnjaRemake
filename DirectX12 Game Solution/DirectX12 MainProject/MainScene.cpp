@@ -5,25 +5,18 @@
 #include "Base/pch.h"
 #include "Base/dxtk.h"
 #include "SceneFactory.h"
-#include"ClassList/StatusManager/StatusManager.h"
 
 // Initialize member variables.
 MainScene::MainScene()
 {
-	player = new Player;
-}
 
-MainScene::~MainScene()
-{
-	delete player;
-	Terminate();
 }
 
 // Initialize a variable and audio resources.
 void MainScene::Initialize()
 {
-	player->Initialize();
 	camera.Initialize();
+	UIManager::Instance().Initialize();
 }
 
 // Allocate all memory the Direct3D and Direct2D resources.
@@ -58,9 +51,9 @@ void MainScene::LoadAssets()
 	light.Specular = DX9::Colors::Value(1.0f, 1.0f, 1.0f, 1.0f);
 	DXTK->Direct3D9->SetLight(100.0f, light);
 	DXTK->Direct3D9->LightEnable(0, true);
-	
-	player->LoadAseets();
+
 	ground.LoadAseets();
+	UIManager::Instance().LoadAssets();
 }
 
 // Releasing resources required for termination.
@@ -92,40 +85,32 @@ NextScene MainScene::Update(const float deltaTime)
 	UNREFERENCED_PARAMETER(deltaTime);
 
 	// TODO: Add your game logic here.
-	player->Update(deltaTime);
-	camera.Update(player,deltaTime);
-
-
+	/*camera.Update(player,deltaTime);*/
+	UIManager::Instance().Update(deltaTime);
 	return NextScene::Continue;
 }
 
 // Draws the scene.
 void MainScene::Render()
 {
-    // TODO: Add your rendering code here.
+	// TODO: Add your rendering code here.
 	DXTK->Direct3D9->Clear(DX9::Colors::CornflowerBlue);
 
 	DXTK->Direct3D9->BeginScene();
 	
-	//3D•`‰æ
-	player->Render();
 	camera.Render();
-	ground.Render();
-	
-	//audience->Render();
 
 	DX9::SpriteBatch->Begin();
 
-	//2D•`‰æ
-
+	UIManager::Instance().Render();
+	
 	DX9::SpriteBatch->End();
 	DXTK->Direct3D9->EndScene();
-
 
 	DXTK->Direct3D9->UpdateResource();
 
 	DXTK->ResetCommand();
-	DXTK->ClearRenderTarget(DirectX::Colors::CornflowerBlue);
+	DXTK->ClearRenderTarget(Colors::CornflowerBlue);
 
 	const auto heapes = descriptorHeap->Heap();
 	DXTK->CommandList->SetDescriptorHeaps(1, &heapes);
@@ -136,8 +121,8 @@ void MainScene::Render()
 		XMUINT2(1280, 720),
 		SimpleMath::Vector2(0.0f, 0.0f)
 	);
-
 	spriteBatch->End();
+
 	DXTK->ExecuteCommandList();
 	DXTK->Direct3D9->WaitUpdate();
 }

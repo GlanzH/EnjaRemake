@@ -61,7 +61,7 @@ void TitleScene::LoadAssets()
 	buzzer = XAudio::CreateSoundEffect(DXTK->AudioEngine, L"BGM_SE/Title/opening_buzzer.wav");
 	start_se = XAudio::CreateSoundEffect(DXTK->AudioEngine, L"BGM_SE/Title/decision.wav");
 
-	prologue_text = DX9::Sprite::CreateFromFile(DXTK->Device9, L"Dialogue/dialogue_01_01.png");
+	prologue_text = DX9::Sprite::CreateFromFile(DXTK->Device9, L"Dialogue/opening.png");
 
 	pv = DX9::MediaRenderer::CreateFromFile(DXTK->Device9, L"Scene/Title/play_demo_1.wmv");
 }
