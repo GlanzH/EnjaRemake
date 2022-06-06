@@ -131,12 +131,12 @@ private:
 	Direction_Knock_Back direction_knock_back;
 
 	//ã’i(•Ï”éŒ¾)
-	enum Upper_State
+	/*enum Upper_State
 	{
 		NOT_UPPER,
 		UPPER_ATTACK
-	};
-	Upper_State upper_state_mode;
+	};*/
+	//Upper_State upper_state_mode;
 	float upper_start;
 	float upper_end;
 

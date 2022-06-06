@@ -91,16 +91,16 @@ void Player::Attack(const float deltaTime)
 	{
 		if (DXTK->KeyEvent->pressed.A || DXTK->GamePadEvent[0].y == GamePad::ButtonStateTracker::PRESSED)
 		{
-			upper_state_mode = Upper_State::UPPER_ATTACK;
+			//upper_state_mode = Upper_State::UPPER_ATTACK;
 		}
-		if (upper_state_mode ==Upper_State::UPPER_ATTACK)
-		{
+		//if(upper_state_mode ==Upper_State::UPPER_ATTACK)
+		/*{
 			SetAnimation(player, ACT1);
 			if (true)
 			{
 
 			}
-		}
+		}*/
 	}
 }
 void Player::Render(){
